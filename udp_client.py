@@ -19,12 +19,6 @@ def main():
     udp_addr = ('127.0.0.1', 9999)
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-    # 发送数据到指定的ip和端口,每隔1s发送一次，发送10次
-    # for i in range(10):
-    #     udp_socket.sendto(("Hello,I am a UDP socket for: " + str(i)).encode('utf-8'), udp_addr)
-    #     print("send %d message" % i)
-    #     sleep(1)
-
     try:
         # 记录发送的数据量
         i = 0
