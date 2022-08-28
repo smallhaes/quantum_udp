@@ -31,6 +31,8 @@ def main():
             sen = generate_content()
             udp_socket.sendto(sen.encode('utf-8'), udp_addr)
             i += 1
+            if time.time() - time_start > 150:
+                break
     finally:
         time_end = time.time()
         time_cost = time_end - time_start
