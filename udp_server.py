@@ -3,7 +3,9 @@ import time
 
 def main():
     # udp 通信地址，IP+端口号
-    udp_addr = ('127.0.0.1', 9999)
+    # udp_addr = ('127.0.0.1', 9999)
+    # 业务A的ip
+    udp_addr = ('30.1.1.2', 6690)
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     # 绑定端口
     udp_socket.bind(udp_addr)

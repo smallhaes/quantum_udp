@@ -16,7 +16,9 @@ def generate_content():
 
 def main():
     # udp 通信地址，IP+端口号
-    udp_addr = ('127.0.0.1', 9999)
+    # udp_addr = ('127.0.0.1', 9999)
+    # 业务B的IP
+    udp_addr = ('20.1.1.2', 7790)
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     try:
